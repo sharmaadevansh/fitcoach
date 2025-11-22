@@ -3,109 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="project2.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Fit-Coach</title>
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="project2.css">
 </head>
 <body>
-    <div class="navbar">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
         <div class="icon"><i class="fa-solid fa-dumbbell"></i></div>
-        <div class="name"> Fit-Coach</div>
+        <div class="name">Fit-Coach</div>
+
         <div class="search-bar">
             <input placeholder="Search Product" class="search-box">
-            <div class="search-icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
+            <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
         </div>
+
         <div class="run"><i class="fa-solid fa-person-walking"></i></div>
         <div class="cart"><i class="fa-solid fa-briefcase"></i></div>
-        <div class="login"><button class="btn"><a href="order.html">Order Now</a></button></div>
-    </div>
 
-    <div class="home">
-        <h1 class="h-primary">Welcome to FIT-Coach</h1>
-        <p class="dev">Your all-in-one fitness supplement store for you. </p>
-        <button class="btn">Login/Sign-up</button>
-    </div>
+        <div class="login">
+            <a href="order.html" class="btn">Order Now</a>
+        </div>
+    </nav>
 
-    <div class="services-container">
+    <!-- HOME -->
+    <section class="home">
+        <h1 class="h-primary">Welcome to Fit-Coach</h1>
+        <p class="dev">Your all-in-one fitness supplement store.</p>
+        <a href="login.html" class="btn">Login / Sign-up</a>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services-section">
         <h1 class="h-primary-center">Our Services</h1>
+
         <div class="services">
             <div class="box">
                 <h2 class="h-secondary center">Protein</h2>
-                <p class="center"><img src="protein.png"></p>
+                <img src="protein.png" alt="Protein">
             </div>
+
             <div class="box">
-                <h2 class="h-secondary center">Accesories</h2>
-                <p class="center"><img src="dumbels.jpg"></p>
+                <h2 class="h-secondary center">Accessories</h2>
+                <img src="dumbels.jpg" alt="Gym Accessories">
             </div>
+
             <div class="box">
                 <h2 class="h-secondary center">Creatine</h2>
-                <p class="center"><img src="creatine.jpg"></p>
+                <img src="creatine.jpg" alt="Creatine">
             </div>
-            <div class="box">
-                <h2 class="h-secondary center">Vitamns</h2>
-                <p class="center"><img src="vitamins.jpg"></p>
-            </div>
-            <div class="box">
-                <h2 class="h-secondary center">fits</h2>
-                <p class="center"><img src="fits.jpg"></p>
-            </div>
-        </div>
-    </div>
 
-    <section id="client-section">
-        <h1 class="h-primary-center">Brands</h1>
-        <div id="clients">
-            <div class="client-item">
-                <img src="mb.png" height="150px" width="150px" alt="Our Client">
+            <div class="box">
+                <h2 class="h-secondary center">Vitamins</h2>
+                <img src="vitamins.jpg" alt="Vitamins">
             </div>
-            <div class="client-item">
-                <img src="gnc.png" height="150px" width="150px" alt="Our Client">
+
+            <div class="box">
+                <h2 class="h-secondary center">Fitness Wear</h2>
+                <img src="fits.jpg" alt="Fitness Wear">
             </div>
-            <div class="client-item">
-                <img src="asitis.jpg" height="150px" width="150px" alt="Our Client">
-            </div>
-            <div class="client-item">
-                <img src="wheycore.jpg" height="150px" width="150px" alt="Our Client">
-            </div>
-            <div class="client-item">
-                <img src="puma.png" height="150px" width="150px" alt="Our Client">
-            </div> 
         </div>
     </section>
 
+    <!-- BRANDS -->
+    <section id="client-section">
+        <h1 class="h-primary-center">Brands</h1>
+
+        <div id="clients">
+            <div class="client-item"><img src="mb.png" alt="Brand"></div>
+            <div class="client-item"><img src="gnc.png" alt="Brand"></div>
+            <div class="client-item"><img src="asitis.jpg" alt="Brand"></div>
+            <div class="client-item"><img src="wheycore.jpg" alt="Brand"></div>
+            <div class="client-item"><img src="puma.png" alt="Brand"></div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
     <section id="contact">
         <h1 class="h-primary-center">Contact Us</h1>
+
         <div id="contact-box">
-            <form action="">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name">
-                </div>
-                <div class="form-group">    
-                    <label for="email">Email:</label>
-                    <input type="text" name="email" id="email" placeholder="Enter your email">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number:</label>
-                    <input type="text" name="phone" id="phone" placeholder="Enter your phone number">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" placeholder="Your message here"></textarea>
-                </div>
+            <form>
+                <label>Name:</label>
+                <input type="text" required placeholder="Enter your name">
+
+                <label>Email:</label>
+                <input type="email" required placeholder="Enter your email">
+
+                <label>Phone Number:</label>
+                <input type="text" required placeholder="Enter your phone number">
+
+                <label>Message:</label>
+                <textarea required placeholder="Your message here"></textarea>
             </form>
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
         <div class="center">
-            copyright &copy; www.fit-coach.com.com. All rights reserved!
+            © 2025 Fit-Coach.com. All rights reserved.
         </div>
     </footer>
+
 </body>
 </html>
+
