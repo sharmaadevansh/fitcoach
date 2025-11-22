@@ -3,194 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order page
-    </title>
-    <style> 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #000000;
-        padding: 20px;
-        background-image: url(pizza.jpeg);
-    }
-    .head{
-        height: 80px;
-        background-color: white;
-        text-align: center;
-        color: #ff0000;
-    }
-    .head p{
-        font-size: 60px;
-        font-family:fantasy-;
-    }
-    
-    .container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 20px;
-        margin-top: 40px;
-        
-        
-    }
-    
-    .item {
-        background-color: #fff;
-        border: 4px solid #ff0000;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        padding: 10px;
-        transition: transform 0.3s ease;
-        border: 4x solid red;
-    }
-    
-    .item img {
-        width: 100%;
-        height: auto;
-        border-bottom: 1px solid #ddd;
-    }
-    
-    .item h3 {
-        margin: 15px 0 10px;
-        font-size: 18px;
-        color: #333;
-    }
-    
-    .item p {
-        font-size: 16px;
-        color: #555;
-    }
-    
-    .item:hover {
-        transform: scale(1.05);
-    }
+    <title>Shop | Fit-Coach</title>
 
-    a{
-        color: black;
-        font-size: x-large;
-        text-decoration: none;
-        
-    }
-    .prev{
-        margin-left: 50px;
-        margin-top: 200px;
-        border-radius: 30px;
-        border: 2px solid black;
-    }
-    </style>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="head"><p>Fit-Coach.com</p></div>
-    
-    <div class="container">
-        <div class="item">
-            <img src="mb whey.png" alt="creatine">
-            <h3>Muscle Blaze whey protein</h3>
-            <p>1kg <br>Rs.2499</p>
+
+    <!-- NAVBAR (Consistent with Home) -->
+    <nav class="navbar">
+        <a href="index.html" class="brand">
+            <i class="fa-solid fa-dumbbell"></i>
+            <span class="logo-text">Fit-Coach</span>
+        </a>
+
+        <div class="nav-actions">
+            <a href="index.html" class="nav-icon"><i class="fa-solid fa-home"></i> Back Home</a>
+            <div class="nav-icon"><i class="fa-solid fa-cart-shopping"></i></div>
         </div>
-        <div class="item">
-            <img src="mb gain.png" alt="creatine">
-            <h3>Muscle Blaze <br>gainer</h3>
-            <p> 2 kg<br> Rs.4199</p>
+    </nav>
+
+    <header class="shop-header">
+        <h1>Store Inventory</h1>
+        <p>Fuel your ambition.</p>
+    </header>
+
+    <div class="products-grid">
+        
+        <!-- Product Item -->
+        <div class="product-card">
+            <div class="product-img-box">
+                <img src="mb whey.png" alt="Whey Protein">
+            </div>
+            <div class="product-details">
+                <h3 class="product-title">Muscle Blaze Whey</h3>
+                <p style="font-size: 0.9rem; color: #888; margin-bottom: 10px;">1kg Pack</p>
+                <div class="product-meta">
+                    <span class="price">Rs. 2499</span>
+                    <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
         </div>
-        <div class="item">
-            <img src="mb bcc.png" alt="creatine">
-            <h3>Muscle Blaze BCAA<br> Creatine</h3>
-            <p> 250gm <br> Rs.899</p>
+
+        <!-- Product Item -->
+        <div class="product-card">
+            <div class="product-img-box">
+                <img src="mb gain.png" alt="Mass Gainer">
+            </div>
+            <div class="product-details">
+                <h3 class="product-title">Muscle Blaze Gainer</h3>
+                <p style="font-size: 0.9rem; color: #888; margin-bottom: 10px;">2kg Pack</p>
+                <div class="product-meta">
+                    <span class="price">Rs. 4199</span>
+                    <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
         </div>
-        <div class="item">
-            <img src="mb cre.png" alt="creatine">
-            <h3>Muscle Blaze<br> Creatine</h3>
-            <p> 500 gm<br> Rs.499</p>
+
+        <!-- Product Item -->
+        <div class="product-card">
+            <div class="product-img-box">
+                <img src="mb bcc.png" alt="BCAA">
+            </div>
+            <div class="product-details">
+                <h3 class="product-title">MB BCAA Pro</h3>
+                <p style="font-size: 0.9rem; color: #888; margin-bottom: 10px;">250gm</p>
+                <div class="product-meta">
+                    <span class="price">Rs. 899</span>
+                    <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
         </div>
-        <div class="item">
-            <img src="mb pre.png" alt="creatine">
-            <h3>Muscle Blaze Pre</h3>
-            <p>250gm<br> Rs.799</p>
+
+        <!-- Product Item -->
+        <div class="product-card">
+            <div class="product-img-box">
+                <img src="mb cre.png" alt="Creatine">
+            </div>
+            <div class="product-details">
+                <h3 class="product-title">MB Creatine Monohydrate</h3>
+                <p style="font-size: 0.9rem; color: #888; margin-bottom: 10px;">500gm</p>
+                <div class="product-meta">
+                    <span class="price">Rs. 499</span>
+                    <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
         </div>
-        <div class="item">
-            <img src="mb sha.png" alt="creatine">
-            <h3>Muscle Blaze Shaker</h3>
-            <p>500ml<br> Rs.249</p>
+
+        <!-- Product Item -->
+        <div class="product-card">
+            <div class="product-img-box">
+                <img src="mb sha.png" alt="Shaker">
+            </div>
+            <div class="product-details">
+                <h3 class="product-title">MB Gym Shaker</h3>
+                <p style="font-size: 0.9rem; color: #888; margin-bottom: 10px;">500ml Leakproof</p>
+                <div class="product-meta">
+                    <span class="price">Rs. 249</span>
+                    <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
         </div>
-        <div class="item">
-            <img src="p1.png" alt="creatine">
-            <h3> Puma GYM tank-top female</h3>
-            <p>RS.799</p>
+
+        <!-- PUMA ITEMS (Grouped) -->
+        <div class="product-card">
+            <div class="product-img-box">
+                <img src="p1.png" alt="Tank Top">
+            </div>
+            <div class="product-details">
+                <h3 class="product-title">Puma Women's Tank</h3>
+                <p style="font-size: 0.9rem; color: #888; margin-bottom: 10px;">Dri-Fit</p>
+                <div class="product-meta">
+                    <span class="price">Rs. 799</span>
+                    <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
         </div>
-        <div class="item">
-            <img src="p2.png" alt="creatine">
-            <h3>Puma Sports Shoes</h3>
-            <p>RS.1999</p>
+
+        <div class="product-card">
+            <div class="product-img-box">
+                <img src="p2.png" alt="Shoes">
+            </div>
+            <div class="product-details">
+                <h3 class="product-title">Puma Sports Trainers</h3>
+                <p style="font-size: 0.9rem; color: #888; margin-bottom: 10px;">Running</p>
+                <div class="product-meta">
+                    <span class="price">Rs. 1999</span>
+                    <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
         </div>
-        <div class="item">
-            <img src="p3.png" alt="creatine">
-            <h3>Puma Marathon shoes</h3>
-            <p>RS.4599</p>
-        </div>
-        <div class="item">
-            <img src="p4.png" alt="creatine">
-            <h3>Puma gym gloves</h3>
-            <p>RS.299</p>
-        </div>
-        <div class="item">
-            <img src="p5.png" alt="creatine">
-            <h3>Puma Gym Bag</h3>
-            <p>RS.599</p>
-        </div>
-        <div class="item">
-            <img src="p6.png" alt="creatine">
-            <h3>Puma gym leggings</h3>
-            <p>RS.799</p>
-        </div>
-        <div class="item">
-            <img src="g1.png" alt="creatine">
-            <h3>Hand Gripper</h3>
-            <p>RS.199</p>
-        </div>
-        <div class="item">
-            <img src="g2.png" alt="creatine">
-            <h3>Strech-band</h3>
-            <p>RS.299</p>
-        </div>
-        <div class="item">
-            <img src="g3.png" alt="creatine">
-            <h3>Pull-Up Bar</h3>
-            <p>RS.1299</p>
-        </div>
-        <div class="item">
-            <img src="g4.png" alt="creatine">
-            <h3>2kg Dumble set</h3>
-            <p>RS.499</p>
-        </div>
-        <div class="item">
-            <img src="g5.png" alt="creatine">
-            <h3>Full dumbels set</h3>
-            <p>RS.1499</p>
-        </div>
-        <div class="item">
-            <img src="g6.png" alt="creatine">
-            <h3>SIT-UP BAR</h3>
-            <p>RS.999</p>
+
+         <div class="product-card">
+            <div class="product-img-box">
+                <img src="g5.png" alt="Dumbbells">
+            </div>
+            <div class="product-details">
+                <h3 class="product-title">Full Dumbbell Set</h3>
+                <p style="font-size: 0.9rem; color: #888; margin-bottom: 10px;">Home Gym</p>
+                <div class="product-meta">
+                    <span class="price">Rs. 1499</span>
+                    <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
         </div>
 
     </div>
-    
-        
 
-
-
-
-        
-        </div>
+    <!-- Simple Navigation for usability -->
+    <div style="text-align: center; margin-bottom: 50px;">
+        <a href="index.html" class="btn">Back to Home</a>
     </div>
-    <div class="prev">
-    <button><a href="project1.html"><b>Prev</b></a></button>
-</div>
+
 </body>
 </html>
